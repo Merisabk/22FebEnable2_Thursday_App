@@ -22,9 +22,38 @@
 
             <div class="col-6">
                 <form class="mb-2">
+                    <h2>Update</h2>
+                    <input type="text" id="idInput" class="form-control" placeholder="enter Item id you would like to update" />
+                    <input type="text" id="updateName" class="form-control" placeholder="enter item name" />
+                    <input type="text" id="updateDescription" class="form-control mt-2" placeholder="enter item description" />
+                    <input type="number" id="updatePrice" class="form-control mt-2" placeholder="enter item price" />
+                    <button type="button" class="btn btn-primary mt-2" id="buttonUpdate">PUT</button>
+                    <input type="text" style="display: none;" />
+                </form>
+            </div>
+
+
+
+            <div class="col-6">
+                <form class="mb-2">
+                    <h2>Read by Id</h2>
+                    <ul id="readByIdOutput"></ul>
+                    <input type="number" id="itemId" class="form-control" placeholder="enter Item id" />
+                    <button type="button" id = "readByIdButton" value="getItemById" class="btn btn-primary mt-2">Get</button>
+                </form>
+
+            <div class="col-6">
+                <form class="mb-2">
                     <h2>Read All</h2>
                     <ul id="listOutput"></ul>
                 </form>
+
+                <div class="col-6">
+                    <form class="mb-2">
+                        <h2>Delete</h2>
+                        <input type="text" id="deleteInput" class="form-control" placeholder="enter Item id you would like to delete" />
+                        <button type="button" class="btn btn-primary mt-2" id="buttonDelete">DELETE</button>
+                    </form>
 
             </div>
         </div>
